@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*respresenta o html o root a cores*/
+:root {
+    --green: #00ff00;
+    --black: #000000;
+    --white: #ffffff;
+   
+}
+
+*{
+    color: var(--fontColor);
+    font-family: Helvetica;
+}
+
+body{
+  background: var(--bg);
+   
+}
+
+ul{
+    font-family:  Helvetica, sans-serif;
+}
+
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+}
+
+.ligth-theme{
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor:var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor:var(--black);
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+ 
+.btn:focus{
+    outline-style: none;
+}
